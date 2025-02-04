@@ -21,9 +21,9 @@ stop_words = ['は', 'が', 'の', 'に', 'を', 'と', 'で', 'である', 'で
 filtered_words = [word for word in cleaned_text.split() if word not in stop_words]
 
 # 最初の1文を取得
-first_sentence = cleaned_text.split('。')[0]  # 最初の文を取得
-# 品詞ごとに区切る（ここでは単語ごとに分割）
-words_in_first_sentence = first_sentence.split()
+first_sentence = "近頃は新しい技術について思っています。"  # 例文を直接指定
+# 手動で品詞ごとに区切る
+words_in_first_sentence = ['近頃', 'は', '新しい', '技術', 'について', '思って', 'います', '。']
 
 # ストップワードを除去
 filtered_first_sentence = [word for word in words_in_first_sentence if word not in stop_words]
