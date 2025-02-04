@@ -16,7 +16,7 @@ cleaned_text = re.sub(r'\s+', ' ', text)  # 改行や余分な空白を削除
 cleaned_text = re.sub(r'<.*?>', '', cleaned_text)  # HTMLタグを削除
 
 # ストップワードのリスト（例）
-stop_words = ['は', 'が', 'の', 'に', 'を', 'と', 'で', 'である', 'です']
+stop_words = ['は', 'が', 'の', 'に', 'を', 'と', 'で', 'である', 'です', 'から']  # 『から』を追加
 
 filtered_words = [word for word in cleaned_text.split() if word not in stop_words]
 
